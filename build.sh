@@ -19,7 +19,7 @@ yellow_echo() {
 
 ######### Compiling Raylib #########
     cd raylib/src/ 
-    make PLATFORM=PLATFORM_DESKTOP -j
+    make PLATFORM=PLATFORM_DESKTOP -j5
     error_code=$?
     echo -n "Compiling Raylib "
     if [ $error_code -eq 0 ]; then
@@ -36,7 +36,7 @@ yellow_echo() {
 ######### Add Source Files #########
     cc -o $project -Wextra -Wall -pedantic -g -Iinclude \
         main.c \
-        $inc_raylib -lm
+        $inc_raylib -lm \
 ###################################
     error_code=$?
     echo -n "Compiling "

@@ -5,6 +5,4 @@ Cauri is a simple audio player.
 - MP3
 - WAV
 - OGG
-
-# Features
-- Config with toml-file
+- FLAC
